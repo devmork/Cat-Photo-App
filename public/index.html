@@ -52,8 +52,19 @@
 
            <!-- Input element allows you several ways to collect data from a web form-->
           <!-- Label elements are used to help associate the text for an input elements-->
-           <label><input type="radio" id="indoor" name="indoor-outdoor"> Indoor </label>
-           <label><input type="radio" id="outdoor" name="indoor-outdoor"> Outdoor </label>
+          <fieldset>
+            <!--Fieldset is used to group related inputs and labels together in a web form -->
+            <!-- Legend element acts as a caption for the content in the fieldset element-->
+            <legend>
+              Is your cat an indoor or outdoor cat?
+            </legend>
+            <label>
+              <input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor 
+            </label>
+            <label>
+              <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor 
+            </label>
+          </fieldset>
            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
           <button type="submit">Submit</button>
         </form>
