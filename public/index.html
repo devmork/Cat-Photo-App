@@ -51,12 +51,15 @@
         <form action="https://freecatphotoapp.com/submit-cat-photo">
 
            <!-- Input element allows you several ways to collect data from a web form-->
-          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button>Submit</button>
+          <!-- Label elements are used to help associate the text for an input elements-->
+           <label><input type="radio" id="indoor" name="indoor-outdoor"> Indoor </label>
+           <label><input type="radio" id="outdoor" name="indoor-outdoor"> Outdoor </label>
+           <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
         </form>
       </section>
 
-      39
+      
     </main>
       
   </body>
